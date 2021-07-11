@@ -1,5 +1,5 @@
 /* -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1) */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 :root {
     --primary-color: #7D3C98;
     --active-list-item: #F0F3F4;
@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -136,6 +137,7 @@ section{
 .container a{
     align-self: flex-start;
     padding:10px;
+    margin:8px 0;
 }
 
 .blog-button{
@@ -143,6 +145,8 @@ section{
     border: 1px solid var(--primary-color);
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+    color:var(--inactive-list-item);
 }
 
 .project-button{
@@ -150,4 +154,24 @@ section{
     border-radius: 0.5rem;
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+    color:var(--active-list-item);
+}
+
+article{
+    width:100%;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.projects{
+    align-items:flex-start ;
+}
+
+.projects p{
+    align-content: flex-start;
+    text-align: initial;
+    font-size: 1rem;
+    font-weight: normal;
+
 }
