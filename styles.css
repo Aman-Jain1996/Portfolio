@@ -175,3 +175,8 @@ article{
     font-weight: normal;
 
 }
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
