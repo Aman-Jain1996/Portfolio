@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 :root {
     --primary-color: #7D3C98;
-    --active-list-item: #F0F3F4;
+    --active-list-item: #F4F6F7 ;
     --inactive-list-item: #B2BABB;
+    --white-color:#F4F6F7;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 .tabs__tab--active {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #1C2833;
     border-bottom-color: transparent;
     padding: 0rem 12px;
     border-top-left-radius: 2px;
@@ -55,9 +56,10 @@ body {
 .hero-span{
     box-sizing: border-box;
     max-width:200px;
-    color:white ;
+    color : var(--white-color) ;
     display: inline-block;
 }
+
 
 .flex-container{
     max-width:600px;
@@ -89,7 +91,7 @@ footer{
 
 .hero-img{
     max-width: 80%;
-    width:350px;
+    width:450px;
     display: flex;
     justify-content: center;
     margin: 2rem auto;
@@ -125,7 +127,7 @@ footer{
 
 .container p{
     font-size:1.3em;
-    text-align: center;
+    text-align: flex-start;
 }
 
 section{
@@ -146,7 +148,7 @@ section{
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
-    color:var(--inactive-list-item);
+    color:var(--primary-color);
 }
 
 .project-button{
@@ -171,12 +173,21 @@ article{
 .projects p{
     align-content: flex-start;
     text-align: initial;
-    font-size: 1rem;
-    font-weight: normal;
-
+    font-size: 1.1rem;
+    color:black;
 }
 
 a{
     text-decoration: none;
     color:inherit;
 }
+
+.flex-container i{
+    color:white;
+}
+
+.blog{
+    margin-top:4rem;
+
+}
+
